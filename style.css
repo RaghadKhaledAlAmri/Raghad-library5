@@ -1,0 +1,535 @@
+
+body{
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(237, 208, 224),rgb(234, 151, 198));
+    height: 150vh;
+    text-align: rights;
+}
+
+header a{
+    color: rgb(144, 15, 96);
+    text-decoration: none;
+    text-shadow: 0px 8px rgb(234, 151, 198) ;
+    font-size: x-large ;
+}
+.logo-text{
+    text-align: right;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(177, 73, 139);
+    font-size: large;
+    width: 100%;
+}
+
+nav li:hover{
+    background-color:rgb(245, 248, 248);
+    border-radius: 3px;
+}
+
+.changeColor{
+    text-align: right;
+}
+
+/* ************* */
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book{
+    background-color:rgb(177, 73, 139) ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 15px;
+}
+
+.book img{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+.book-title{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration:none ;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.book-title:hover{
+    background-color: rgb(144, 15, 96);
+}
+
+/* ************* */
+
+#changeColor{
+    color: rgb(144, 15, 96);
+    padding: 0 20px;
+    margin: 5px;
+}
+#changeColor:hover{
+    background-color:rgb(144, 15, 96) ;
+    color: white;
+}
+
+/* ************* */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    
+}
+.cont{
+    text-align: center;
+    background-color: rgb(144, 15, 96);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 50px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: x-large;
+    margin-bottom: 30px;
+    color: rgb(144, 15, 96);
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.contact-item {
+    display: flex;
+    flex-direction: column; /* ترتيب المحتوى عموديًا */
+    align-items: center; /* توسيط المحتوى أفقيًا */
+    text-decoration: none;
+    color: rgb(144, 15, 96);
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+.contact-item i{
+    font-size: 3em; /* حجم الأيقونة */
+    color: rgb(144, 15, 96);
+    margin-bottom: 10px; /* مسافة بين الأيقونة والنص */
+    transition: color 0.3s;
+}
+.contact-item:hover{
+    transform: translateY(-5px); /* رفع العنصر قليلاً */
+}
+
+.contact-item:hover i {
+    color: rgb(177, 73, 139); /* تغيير لون الأيقونة */
+}
+
+/* ************* */
+
+footer {    background-color: #4a4a4a; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 40px 20px; /* المسافة الداخلية (الأعلى والأسفل) */
+    font-family: Arial, sans-serif;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+/* استخدام Flexbox لتنظيم أقسام الفوتر */
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* توزيع الأقسام بالتساوي */
+    flex-wrap: wrap; /* السماح للعناصر بالنزول لسطر جديد */
+    gap: 30px; /* مسافة بين الأقسام */
+}
+
+.footer-section {
+    width: 200px; /* عرض كل قسم */
+}
+
+.footer-section h4 {
+    border-bottom: 2px solid rgb(177, 73, 139); /* خط تحت عنوان القسم */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* تنسيق الروابط والقوائم */
+.footer-section ul {
+    list-style: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+}
+
+.footer-section ul li a {color: #ccc; /* لون روابط القائمة */
+    text-decoration: none; /* إزالة الخط السفلي */
+    line-height: 1.8; /* مسافة بين الأسطر */
+    transition: color 0.3s ease; /* تأثير اللون عند مرور المؤشر */
+}
+
+.footer-section ul li a:hover {
+    color: #fff; /* لون أبيض عند مرور المؤشر */
+}
+
+/* تنسيق أيقونات وسائل التواصل الاجتماعي */
+.social-icons a {
+    color: #fff;
+    font-size: 24px; /* حجم الأيقونة */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(177, 73, 139); /* لون مميز عند مرور المؤشر */
+}
+
+/* تنسيق قسم حقوق النشر */
+.copyright {
+    text-align: center; /* توسيط النص */
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(177, 73, 139); /* خط فاصل */
+}
+
+/* ************* */
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    
+}
+.abou{
+    text-align: center;
+    background-color: rgb(144, 15, 96);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 50px;
+}
+
+.about-container {    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+section h2 {
+    color: rgb(144, 15, 96);
+    border-bottom: 2px solid rgb(144, 15, 96);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* تنسيق قسم فريق العمل */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.member-card {
+    text-align: center;
+    max-width: 200px;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    border: 3px solid rgb(144, 15, 96);
+    object-fit: cover; /* لضمان أن الصورة تملأ الإطار بشكل صحيح */
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    margin-top: 0;
+    color: rgb(144, 15, 96);
+}
+
+/* ************* */
+.singn{
+    display: flex;
+    justify-content: center;
+    
+}
+.sing{
+    text-align: center;
+    background-color: rgb(144, 15, 96);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 50px;
+}
+
+.signup-container { 
+    background-color: #fff;
+    padding: 30px;
+    margin: 0px 550px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* تنسيق مجموعات الإدخال */
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box; /* لضمان أن العرض يشمل الحشو والحدود */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    
+    direction: rtl; /* لضمان كتابة النص من اليمين لليسار */
+}
+
+.input-group i {
+    color: rgb(144, 15, 96); /* لون أيقونة مميز */
+    margin-left: 10px;
+}
+
+/* تنسيق الزر */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(144, 15, 96);
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(144, 15, 96);
+}
+
+/* تنسيق رابط تسجيل الدخول */
+.login-link {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.login-link a {
+    color: rgb(144, 15, 96);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+/* ************* */
+
+.looogin{
+    display: flex;
+    justify-content: center;
+    
+}
+.loogin{
+    text-align: center;
+    background-color: rgb(144, 15, 96);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 50px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 0px 550px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* تنسيق مجموعات الإدخال */
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box; /* لضمان أن العرض يشمل الحشو والحدود */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    direction: rtl; /* لضمان كتابة النص من اليمين لليسار */
+}
+
+/* تنسيق الزر */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(144, 15, 96);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: rgb(144, 15, 96);
+}
+
+/* تنسيق رابط التسجيل */
+.signup-link {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.signup-link a {
+    color: rgb(144, 15, 96);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* الأنماط المتجاوبة */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+
+
+/* ************* */
+
+/* الأنماط المتجاوبة */
+@media (max-width: 500px) {
+    .signup-container {
+        padding: 25px;
+
+        margin: 20px;
+    }
+}
+
+
+/* تنسيقات متجاوبة */
+@media (max-width: 600px) {
+    .about-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* الأنماط المتجاوبة (Responsive Design) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* ترتيب الأقسام عموديًا */
+        align-items: center; /* توسيط الأقسام */
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%; /* جعل كل قسم يأخذ العرض الكامل */
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .books{
+        gap: 15px;
+    }
+
+    .book{
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .books{
+        gap: 10px;
+    }
+
+    .book{
+        width: 90%;
+    }
+}
+
+
+
+
